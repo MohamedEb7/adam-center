@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>مركز آدم للعلاج الطبيعي</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                مركز آدم
+            </div>
+
+            <div class="links">
+                <a href="#home">الرئيسية</a>
+                <a href="#about">عن المركز</a>
+                <a href="#services">الخدمات</a>
+                <a href="#booking">الحجز</a>
+                <a href="#contact">تواصل معنا</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>مركز آدم للعلاج الطبيعي</h1>
+
+            <p>
+                رعاية متخصصة لمساعدتك على استعادة الحركة
+                وتحسين جودة حياتك.
+            </p>
+
+            <a href="#booking" class="btn">
+                احجز موعدك الآن
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="section">
+
+        <h2>عن مركز آدم</h2>
+
+        <p>
+            نقدم خدمات العلاج الطبيعي والتأهيل من خلال
+            برامج تساعد على تحسين الحركة وتقليل الألم
+            ودعم رحلة التعافي.
+        </p>
+
+    </section>
+
+
+    <!-- Services -->
+    <section id="services" class="section">
+
+        <h2>خدماتنا</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>العلاج الطبيعي</h3>
+                <p>
+                    برامج علاجية مناسبة لمختلف الحالات.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>التأهيل</h3>
+                <p>
+                    برامج تساعد على استعادة الحركة والنشاط.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>تنظيم الوزن</h3>
+                <p>
+                    متابعة ودعم للوصول إلى نمط حياة أفضل.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Booking -->
+    <section id="booking" class="section booking">
+
+        <h2>احجز موعدك</h2>
+
+        <form id="bookingForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="الاسم بالكامل"
+                required
+            >
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="رقم الهاتف"
+                required
+            >
+
+            <select id="service" required>
+
+                <option value="">اختر الخدمة</option>
+
+                <option value="العلاج الطبيعي">
+                    العلاج الطبيعي
+                </option>
+
+                <option value="التأهيل">
+                    التأهيل
+                </option>
+
+                <option value="تنظيم الوزن">
+                    تنظيم الوزن
+                </option>
+
+            </select>
+
+            <textarea
+                id="message"
+                placeholder="اكتب رسالتك أو تفاصيل الحجز"
+            ></textarea>
+
+            <button type="submit">
+                إرسال الحجز
+            </button>
+
+        </form>
+
+        <p id="result"></p>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+
+        <h2>تواصل معنا</h2>
+
+        <p>
+            يمكنك التواصل مع المركز للاستفسار أو حجز موعد.
+        </p>
+
+        <a
+            href="https://wa.me/201211239500"
+            target="_blank"
+            class="whatsapp"
+        >
+            تواصل عبر WhatsApp
+        </a>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 مركز آدم للعلاج الطبيعي
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

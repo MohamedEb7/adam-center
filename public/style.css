@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f9fc;
+    color: #222;
+}
+
+
+/* Navbar */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 2px 15px #00000015;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #087f8c;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: #087f8c;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(#087f8ccc, #087f8ccc),
+        url("https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    color: white;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    background: white;
+    color: #087f8c;
+
+    padding: 14px 30px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+}
+
+
+/* Sections */
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 80px 20px;
+
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 35px;
+    color: #087f8c;
+    margin-bottom: 25px;
+}
+
+.section > p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 2;
+}
+
+
+/* Cards */
+
+.cards {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    flex: 1;
+
+    background: white;
+
+    padding: 35px 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px #00000012;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #087f8c;
+    margin-bottom: 15px;
+}
+
+
+/* Booking */
+
+.booking {
+    background: white;
+    border-radius: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 30px auto 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #087f8c;
+}
+
+button {
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #087f8c;
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #056570;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+/* WhatsApp */
+
+.whatsapp {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 14px 25px;
+
+    background: #25d366;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background: #063f46;
+    color: white;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .section {
+        padding: 60px 15px;
+    }
+
+}
